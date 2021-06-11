@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title><b>FeedBack Form</b></title>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24o70tkdYLojScgSpkhFR9WtSfFy6tk6ing&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        a:link{
+            color: #b8860b;
+            text-decoration: none;
+        }
+        a:visited{
+            color: #8b008b;
+        }
+        a:hover{
+            color: #5f9ea0;
+        }
+        a:active{
+            color:#ff0000;
+        }
+        .table1{
+
+
+            background-image: url("https://pro.sony/s3/2017/04/08151948/main-banner_1600x450.jpg");
+
+        }
+        #text{
+            width: 200px;
+            height: 100px;
+            resize: none;
+            background-image:url("data:image/png;base64,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");
+            background-size: 50%;
+            background-repeat: no-repeat;
+            background-position: right;
+            color: red;
+            font-size:16px;
+
+        }
+
+
+
+
+        .LI{
+            border: 2px solid #ffd700;
+            background-color: #f5f5f5;
+            width: 300px;
+            height: 260px;
+        }
+        .DT{
+            border: 2px solid #ffd700;
+            background-color: #f5f5f5;
+            width: 300px;
+            height: 250px;
+        }
+        .OL{
+            border: 2px solid #ffd700;
+            background-color: #f5f5f5;
+            width: 300px;
+            height: 250px;
+        }
+
+        .form{
+
+            margin: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family:sans-serif;
+        }
+        .table{
+            opacity: 98%;
+        }
+
+        h1,
+        p {
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        .app {
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+        .radio {
+            display: none;
+        }
+        .radio ~ span {
+            font-size: 3rem;
+            filter: grayscale(100);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .radio:checked ~ span {
+            filter: grayscale(0);
+            font-size: 4rem;
+        }
+
+
+    </style>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+        function Email()
+        {
+            var emailID = document.forms[0].EMail.value;
+            atpos = emailID.indexOf("@");
+            dotpos = emailID.lastIndexOf(".");
+
+            if (atpos < 1 || ( dotpos - atpos < 2 )) {
+                alert("Please enter correct email ID")
+                document.forms[ 0 ].EMail.focus() ;
+                return false;
+            }
+            return( true );
+        }
+
+        function Movies() {
+            var mov = document.forms[0]["Movies"];
+
+            if (mov.selectedIndex < 1){
+                alert("You need to choose a movie !!")
+                document.forms[0].Movies.focus();
+                return false;
+            }
+            return true;
+        }
+
+
+        function validate(){
+            if (document.forms[0].Comment.value == ""){
+                alert("Write Your feedback comments");
+                document.forms[0].Comment.focus();
+                return false;
+
+            }
+            return true;
+
+        }
+        function validation() {
+            var img=document.forms[0].img_upload;
+            var validExt=["jpeg","png","jpg"];
+
+            if(img.value!=''){
+                var img_ext=img.value.substring(img.value.lastIndexOf('.')+1)
+
+                var result=validExt.includes(img_ext);
+                if(result==false){
+                    alert("Selected Files is Not an Image")
+                    return false;
+                }
+            }
+
+        }
+
+        function checkForm()
+        {	
+            if(Email()== false)
+            {
+                return;
+            }
+            if(Movies()==false){
+                return;
+            }
+
+            if(validate()==false)
+            {
+                return;
+            }
+            if(validation()==false)
+            {
+                return;
+            }
+
+            document.forms[ 0 ].submit();
+        }
+
+    </SCRIPT>
+</head>
+<body>
+<table border="1" bgcolor= #ff0000 width=100%>
+    <tr>
+   <td bgcolor="ffe4c4" align="middle" id="up"><a href="indexs.html"><b><h3>Main Page</h3></b></a><br></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page4.html"><b><h3>About Directors</h3></b></a><br></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page3.html"><b><h3>About Actors & Movies prices</h3></b></a></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page5.html"><b><h3>Ship A Movie</h3></b></a></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page2.html"><b><h3>FeedBack Form</h3></b></a></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page6.html"><b><h3>Contact Information</h3></b></a></td>
+
+    </tr>
+</table>
+
+<form id="FeedBack" action="www.moviesnight.epizy.com" METHOD="GET" class="form" name="Form2">
+    <TABLE align="middle" BORDER="5" CELLPADDING="2" bgcolor= "#e6e6fa" class="table">
+    <TH colspan="4"><h2><b><p>{Movies Feedback}</p></b></h2></TH>
+
+        <tr><td colspan="2" align="middle"><p><b>Enter Your Information</b></p></td></tr>
+
+        <tr>
+            <td><p>Name:- <INPUT TYPE="TEXT" NAME="FirstName" Size="30" placeholder="Enter Your First Name"> </p></td>
+            <td><p>Surname:- <INPUT TYPE="TEXT" NAME="Surname" Size="30" placeholder="Enter Your Last Name"> </p></td>
+        </tr>
+
+        <tr><td colspan="3"><P>Adress:-<INPUT TYPE=TEXT NAME="ADDRESS" SIZE="100" placeholder="Enter Your Full Address"></P></td></tr>
+
+        <tr>
+            <td align="middle"><p>Phone Number:-</p><INPUT TYPE="text" NAME="Phone1" SIZE=3 placeholder="123"><INPUT TYPE="text" NAME="Phone2" SIZE=3 placeholder="123"><INPUT TYPE="text" NAME="Phone3" SIZE=4 placeholder="1234"></td>
+
+            <td align="middle"><p>Email:-</p><input type="text" name="EMail" placeholder="Example@example.com"></td>
+        </tr>
+
+
+    <tr>
+        <td align="middle">
+            <b>Choose A Movie</b><BR>
+        <SELECT multiple name="Movies" size="3">
+            <option selected hidden value="">--CHOOSE--</option>
+            <OPTION value="1">The Exorcist</OPTION>
+            <OPTION value="2">Dumb And Dumber</OPTION>
+            <OPTION value="3">Titanic</OPTION>
+            <OPTION value="4">21 Bridges</OPTION>
+
+        </SELECT>
+        </td>
+
+     <td>
+         <div class="app">
+             <p align="middle"> <b>Movie Satisfiction:-</b></p>
+
+         <div class="container">
+
+             <div class="item">
+
+                 <label for="0">
+                 <input class="radio" type="radio" name="feedback" id="0" value="0">
+                 <span style="font-size:50px">&#128545;</span>
+                 </label>
+             </div>
+
+             <div class="item">
+                 <label for="1">
+                     <input class="radio" type="radio" name="feedback" id="1" value="1">
+                     <span style="font-size:50px">&#128542;</span>
+                 </label>
+             </div>
+             <div class="item">
+                 <label for="3">
+                     <input class="radio" type="radio" name="feedback" id="3" value="3">
+                     <span style="font-size:50px">&#128513</span>
+                 </label>
+             </div>
+             <div class="item">
+                 <label for="4">
+                     <input class="radio" type="radio" name="feedback" id="4" value="4">
+                     <span style="font-size:50px">&#128525</span>
+                 </label>
+             </div>
+
+         </div>
+         </div>
+     </td>
+    </tr>
+<tr>
+    <td colspan="2" align="middle">
+
+    <P> <b>Feed back comments About The Movie:-</b><BR></P>
+    <TEXTAREA NAME="Comment" ROWS=8 COLS=55 placeholder="Write Your Comments About The Movie Here."></TEXTAREA><br>
+        <b>Upload File:- </b><INPUT NAME="img_upload" TYPE=file ><br><br>
+    </td>
+</tr>
+<tr>
+    <td colspan="2" align="middle">
+    <INPUT TYPE=button VALUE="SEND" onclick="checkForm()">
+    <INPUT TYPE=reset VALUE="CLEAR">
+    </td>
+</tr>
+
+    </TABLE>
+</form>
+</body>
+</html>

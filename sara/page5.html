@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><b>Shipping</b></title>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24o70tkdYLojScgSpkhFR9WtSfFy6tk6ing&usqp=CAU');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+<table border="1" bgcolor= #ff0000 width=100%>
+    <tr>
+   <td bgcolor="ffe4c4" align="middle" id="up"><a href="indexs.html"><b><h3>Main Page</h3></b></a><br></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page4.html"><b><h3>About Directors</h3></b></a><br></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page3.html"><b><h3>About Actors & Movies prices</h3></b></a></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page5.html"><b><h3>Ship A Movie</h3></b></a></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page2.html"><b><h3>FeedBack Form</h3></b></a></td>
+   <td bgcolor="f5f5dc" align="middle"><a href="page6.html"><b><h3>Contact Information</h3></b></a></td>
+
+    </tr>
+</table>
+</table>
+    <FORM ACTION="movieform" METHOD="GET">
+        <h1><b><p>Want To Ship A Movie ?</p></b></h1>
+
+        <TABLE BORDER="5" CELLPADDING="4" bgcolor="a9a9a9">
+            <TR><TD COLSPAN="5" align="middle" bgcolor="#f0f8ff"><h3><b>Enter Your Personal Data</b></h3></TD></TR>
+
+            <TD><i>First Name:-</i><INPUT TYPE="text" NAME="FirstName" SIZE=20 placeholder="Write Your First Name"></TD>
+            <TD><i>Last Name:-</i><INPUT TYPE="text" NAME="LastName" SIZE=20 placeholder="Write Your Last Name"></TD>
+            <TD colspan="3"><i>Age:-</i><INPUT TYPE="text" NAME="Age" SIZE=4 placeholder="Your Age"></TD>
+            <TR>
+
+                <TD><i>Country:</i> <INPUT TYPE="text" NAME="Country" SIZE="5" placeholder="Write Your Country"></TD>
+
+                </TD>
+
+                <TD COLSPAN="2">City: <INPUT TYPE="text" NAME="City" SIZE=20 placeholder="Write Your City"></TD>
+
+                <TD><i>Street Address:</i> <TEXTAREA placeholder="Enter Your Street"></TEXTAREA><br></TD>
+            </TR>
+
+            <TR>
+                <TD COLSPAN="2"><i>ZIP Code:</i> <INPUT TYPE="text" NAME="ZIPCode"
+                                                        SIZE=10></TD>
+                <TD COLSPAN="2"> <i>Phone Number</i>
+                    (<INPUT TYPE="text" NAME="Phone1" SIZE=3>)
+                    <INPUT TYPE="text" NAME="Phone2" SIZE=3>-
+                    <INPUT TYPE="text" NAME="Phone3" SIZE=4></TD>
+            </TR>
+            <TR>
+            <TR><TD colspan="4" align="middle" bgcolor="#f0f8ff"><h3><b>Enter Credit Card Information</b></h3></TD></TR>
+            <TD><i>Credit Card</i>
+                <INPUT TYPE="radio" NAME="CreditCardType" VALUE="Visa"
+                       CHECKED><i>Visa</i>
+                <INPUT TYPE="radio" NAME="CreditCardType"
+                       VALUE="MasterCard"><i>Master/Credit</i></TD>
+            <TD COLSPAN="2" ALIGN="CENTER">
+                <INPUT TYPE="text" NAME="CreditCardNumber1" SIZE=4>
+                <INPUT TYPE="text" NAME="CreditCardNumber2" SIZE=4>
+                <INPUT TYPE="text" NAME="CreditCardNumber3" SIZE=4>
+                <INPUT TYPE="text" NAME="CreditCardNumber4" SIZE=4></TD>
+            <TD COLSPAN="2"><i>Expiration Date:</i>
+                <INPUT TYPE="text" NAME="ExpirationMonth" SIZE=2>/
+                <INPUT TYPE="text" NAME="ExpirationYear" SIZE=2></TD>
+            </TR>
+            <TR><TD colspan="4" align="middle" bgcolor="#f0f8ff"><h3><b>Choose Your Movie!!</b></h3></TD></TR>
+
+            <TR>
+                <TD><i>Movies</i></TD>
+                <TD COLSPAN=4><SELECT MULTIPLE NAME="Movies" SIZE=1>
+                    <OPTION SELECTED VALUE="2000"> The Exorcist
+                    <OPTION VALUE="800"> Dumb And Dumber<OPTION VALUE="50">
+                    Dumb and dumber
+                    <OPTION VALUE="250"> Titanic <OPTION VALUE="40">
+                    Titanic
+                </SELECT></TD>
+            </TR>
+            <TR>
+                <TD ALIGN=CENTER COLSPAN="5" bgcolor= "f0e68c">
+                    <H1>Your order is completed ,Thanks! </H1>
+                </TD>
+            </TR>
+        </TABLE>
+
+            <INPUT  TYPE="button" VALUE="Ship it!" ONCLICK="checkForm()">
+            <INPUT TYPE="reset" VALUE="Reset">
+
+    </FORM>
+</div>
+</body>
+</html>
